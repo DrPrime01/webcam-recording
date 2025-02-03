@@ -29,13 +29,19 @@ body {
 
 .webcam-container {
   min-height: 500px;
-  width: 700px;
+  max-width: 340px;
+  width: 100%;
   border: 1px solid #cccccc;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: relative;
+}
+
+.media-devices {
+  display: flex;
+  flex-direction: column;
 }
 
 .red-dot {
@@ -67,6 +73,7 @@ video {
 
 select {
   padding: 8px;
+  width: 100%;
 }
 
 button {
@@ -77,6 +84,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
@@ -91,4 +99,15 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .webcam-container {
+    max-width: 700px;
+  }
+
+  .media-devices {
+    display: flex;
+    flex-direction: row;
+  }
 }
