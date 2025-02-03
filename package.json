@@ -1,5 +1,30 @@
 {
   "devDependencies": {
     "vite": "^6.0.11"
-  }
+  },
+  "name": "webcam-recording",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "dependencies": {
+    "esbuild": "^0.24.2",
+    "nanoid": "^3.3.8",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.1",
+    "rollup": "^4.34.1",
+    "source-map-js": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrPrime01/webcam-recording.git"
+  },
+  "author": "Dr Prime",
+  "license": "MIT"
 }
