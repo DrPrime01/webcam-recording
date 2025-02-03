@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Recording</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div>
+        <h1>Webcam Recording</h1>
+        <div class="webcam-container">
+          <div class="red-dot"></div>
+          <video id="webcam" autoplay muted></video>
+          <div><button id="start-camera">Start Camera</button></div>
+          <div class="media-devices">
+            <select
+              name="video-devices"
+              id="video-devices"
+              class="video-devices"
+            >
+              <option>Select video device</option>
+            </select>
+            <select
+              name="audio-devices"
+              id="audio-devices"
+              class="audio-devices"
+            >
+              <option>Select audio device</option>
+            </select>
+          </div>
+          <div>
+            <button id="start-record" disabled>Start Recording</button>
+            <button id="stop-record" disabled>Stop Recording</button>
+          </div>
+          <a id="download-link" style="display: none">Download Recording</a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
